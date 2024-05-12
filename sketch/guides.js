@@ -1,6 +1,6 @@
 const Guides = {
-    movieRadius: 16,
-    movementSpeed: 3,
-    gridSize: 4,
-    objectAlpha: 255
+    movieRadius: 8,
+    movementSpeed: 4,
+    gridSize: 8,
+    objectAlpha: 128
 }

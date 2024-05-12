@@ -14,14 +14,14 @@ function setup() {
 }
 
 function draw() {
-  background(255, 150);
-
+  background(255, 50);
   
+ 
   field.draw();
   for (const [id, genre] of state.genres.entries()) {
     genre.draw();
   }
-
+  
   for (const movie of state.movies) {
     movie.move();
     movie.draw();

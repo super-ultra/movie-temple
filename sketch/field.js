@@ -32,8 +32,8 @@ class Field {
         const gridY = j * Guides.gridSize;
         
         let value = 0;
-        let candidateColor;
-        let candidateValue = 0;
+        let candidateValues = [];
+        let candidateColors = [];
         
         for (const [id, genre] of state.genres.entries()) {
           const r = genre.radius;
@@ -42,9 +42,9 @@ class Field {
           const newValue = r * r / ((gridX - x) * (gridX - x) + (gridY - y) * (gridY - y));
           value += newValue;
           
-          if (newValue > candidateValue) {
-            candidateValue = newValue;
-            candidateColor = color(genre.color);
+          if (newValue > 0.1) {
+            candidateValues.push(newValue);
+            candidateColors.push(color(genre.color));
           }
         }
       
@@ -55,20 +55,35 @@ class Field {
           const newValue = r * r / ((gridX - x) * (gridX - x) + (gridY - y) * (gridY - y));
           value += newValue;
           
-          if (newValue > candidateValue) {
-            candidateValue = newValue;
-            candidateColor = color(movie.mainColor);
+          if (newValue > 0.1) {
+            candidateValues.push(newValue);
+            candidateColors.push(color(movie.mainColor));
           }
         }
         
         if (value >= 0.8) {
-          noStroke();
-          candidateColor.setAlpha(candidateValue * 20);
-          fill(candidateColor);
-          ellipse(gridX, gridY, Guides.gridSize, Guides.gridSize);
+          let sum = 0.0;
+          let r = 0.0;
+          let g = 0.0;
+          let b = 0.0;       
+          for (let k = 0; k < candidateValues.length; k++) {
+            sum += candidateValues[k];
+          
+            r += candidateColors[k].levels[0] * candidateValues[k];
+            g += candidateColors[k].levels[1] * candidateValues[k];
+            b += candidateColors[k].levels[2] * candidateValues[k];
+            
+          }
+          
+          noStroke();          
+          fill(r / sum, g / sum, b / sum, Guides.objectAlpha);
+          ellipse(
+            gridX + 10 * sin(noise(0.00005 * gridX * frameCount)), 
+            gridY + 10 * sin(noise(0.00005 * gridY * frameCount)), 
+            Guides.gridSize + 4 * cos(noise(0.00005 * gridX * frameCount)), 
+            Guides.gridSize + 4 * cos(noise(0.00005 * gridY * frameCount))
+          );
         }
-      
-      
       }
     }
   }

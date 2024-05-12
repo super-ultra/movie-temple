@@ -26,5 +26,9 @@ class Genre {
     circle(this.position.x, this.position.y, diameter / 2);
     fill(drawColor);
     circle(this.position.x, this.position.y, diameter / 4);
+    
+    fill(40);
+    textStyle(BOLD);
+    text(this.id, this.position.x - 10, this.position.y);
   }
 }
