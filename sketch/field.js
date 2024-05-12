@@ -9,8 +9,29 @@ class Field {
   }
   
   draw() {
-    this.drawLines();
+    this.drawCircles();
   }
+
+  // Lines
+  
+  drawLines() {
+    for (const movie of state.movies) {
+      for (const other of state.movies) {
+        if (other === movie) {
+          continue;
+        }
+        const distance = p5.Vector.dist(movie.position, other.position);
+        if (distance < 95) {
+          strokeWeight(0.5);
+          stroke(200, 200, 200, 50);
+          
+          line(movie.position.x, movie.position.y, other.position.x, other.position.y);
+        }
+      }
+    }
+  }
+
+  // Circles
   
   drawCircles() {   
     for (let i = 0; i < this.cols; i++) {
@@ -29,7 +50,7 @@ class Field {
           const newValue = r * r / ((gridX - x) * (gridX - x) + (gridY - y) * (gridY - y));
           value += newValue;
           
-          if (newValue > 0.1) {
+          if (newValue > 0.2) {
             candidateValues.push(newValue);
             candidateColors.push(color(genre.color));
           }
@@ -42,28 +63,15 @@ class Field {
           const newValue = r * r / ((gridX - x) * (gridX - x) + (gridY - y) * (gridY - y));
           value += newValue;
           
-          if (newValue > 0.1) {
+          if (newValue > 0.2) {
             candidateValues.push(newValue);
             candidateColors.push(color(movie.mainColor));
           }
         }
         
         if (value >= 0.8) {
-          let sum = 0.0;
-          let r = 0.0;
-          let g = 0.0;
-          let b = 0.0;       
-          for (let k = 0; k < candidateValues.length; k++) {
-            sum += candidateValues[k];
-          
-            r += candidateColors[k].levels[0] * candidateValues[k];
-            g += candidateColors[k].levels[1] * candidateValues[k];
-            b += candidateColors[k].levels[2] * candidateValues[k];
-            
-          }
-          
           noStroke();          
-          fill(r / sum, g / sum, b / sum, Guides.objectAlpha);
+          fill(this._averageColor(candidateColors, candidateValues));
           ellipse(
             gridX + 10 * sin(noise(0.00005 * gridX * frameCount)), 
             gridY + 10 * sin(noise(0.00005 * gridY * frameCount)), 
@@ -74,22 +82,21 @@ class Field {
       }
     }
   }
-  
-  drawLines() {
-    for (const movie of state.movies) {
-      for (const other of state.movies) {
-        if (other === movie) {
-          continue;
-        }
-        const distance = p5.Vector.dist(movie.position, other.position);
-        if (distance < 95) {
-          strokeWeight(0.5);
-          stroke(200, 200, 200, 50);
-          
-          line(movie.position.x, movie.position.y, other.position.x, other.position.y);
-        }
-      }
+
+  _averageColor(colors, coeffs) {
+    let sum = 0.0;
+    let r = 0.0;
+    let g = 0.0;
+    let b = 0.0;       
+    for (let k = 0; k < coeffs.length; k++) {
+      sum += coeffs[k];
+    
+      r += colors[k].levels[0] * coeffs[k];
+      g += colors[k].levels[1] * coeffs[k];
+      b += colors[k].levels[2] * coeffs[k];
     }
+
+    return color(r / sum, g / sum, b / sum, Guides.objectAlpha);
   }
-  
+
 };
