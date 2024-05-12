@@ -1,3 +1,4 @@
 const Guides = {
-    movieSize: 15
+    movieSize: 15,
+    movementSpeed: 1
 }

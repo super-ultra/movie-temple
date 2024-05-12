@@ -1,4 +1,5 @@
 let state;
+let field; 
 
 function preload() {
   state = new State();
@@ -8,19 +9,23 @@ function preload() {
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   state.setup();
+  
+  field = new Field();
 }
 
 function draw() {
   background(255, 150);
 
   for (const [id, genre] of state.genres.entries()) {
-    genre.display();
+    genre.draw();
   }
 
   for (const movie of state.movies) {
     movie.move();
-    movie.display();
+    movie.draw();
   }
+  
+  field.draw();
 }
 
 function windowResized() {

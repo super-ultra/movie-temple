@@ -10,7 +10,7 @@ class Genre {
     return max(Guides.movieSize, this.movieCount * 8);
   }
   
-  display() {
+  draw() {
     noStroke();
     
     stroke(0, 5);

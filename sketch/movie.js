@@ -13,7 +13,7 @@ class Movie {
     const genre = this._getTargetGenre();
     const direction = p5.Vector.sub(genre.position, this.position);
     direction.normalize();
-    direction.mult(3);
+    direction.mult(Guides.movementSpeed);
     this.position.add(direction);
 
     // Update trail
@@ -57,7 +57,7 @@ class Movie {
     }
   }
 
-  display() {
+  draw() {
     noStroke();
     // for (let i = 0; i < this.trail.length; i += 2) {
     //   fill("#33dd9910");
@@ -75,19 +75,6 @@ class Movie {
       circle(this.position.x, this.position.y, size);
       
       size = size / 1.5;
-    }
-
-    for (let other of state.movies) {
-      if (other === this) {
-        continue;
-      }
-      const distance = p5.Vector.dist(this.position, other.position);
-      if (distance < 95) {
-        strokeWeight(0.5);
-        stroke(200, 200, 200, 50);
-        
-        line(this.position.x, this.position.y, other.position.x, other.position.y);
-      }
     }
     
     //const genre = this._getTargetGenre();
