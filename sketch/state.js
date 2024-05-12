@@ -9,7 +9,10 @@ class State {
     this.rawMovies = loadJSON("data/movie-history.json");
   }
 
-  setup() {
+  setup() {    
+    this.movies = [];
+    this.genres = new Map();
+    
     for (const [index, rawGenre] of Object.entries(this.rawGenres)) {
       const genre = new Genre(rawGenre["id"], rawGenre["color"], 0, random(width), random(height));
       this.genres.set(genre.id, genre);

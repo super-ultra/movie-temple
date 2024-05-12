@@ -250,304 +250,213 @@
         ]
     },
     {
-        "title": "Kingdom Lost",
+        "title": "Urban Justice",
         "genres": [
-            "History",
-            "Drama"
+            "Action",
+            "Crime"
         ]
     },
     {
-        "title": "Invisible Fear",
+        "title": "Flight of Fury",
         "genres": [
-            "Thriller",
-            "Mystery"
+            "Action",
+            "Adventure"
         ]
     },
     {
-        "title": "Neon Jazz",
+        "title": "Rush Hour Redemption",
         "genres": [
-            "Music",
-            "Drama"
+            "Action",
+            "Comedy"
         ]
     },
     {
-        "title": "Alien Encounter",
+        "title": "Black Ops Escape",
         "genres": [
-            "Sci-Fi",
+            "Action",
+            "War"
+        ]
+    },
+    {
+        "title": "Desert Eagle",
+        "genres": [
+            "Action",
+            "War"
+        ]
+    },
+    {
+        "title": "Iron Spy",
+        "genres": [
+            "Action",
             "Thriller"
         ]
     },
     {
-        "title": "Mountain High",
+        "title": "Nightstrike",
         "genres": [
-            "Documentary",
+            "Action",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Sky Battle",
+        "genres": [
+            "Action",
+            "Sci-Fi"
+        ]
+    },
+    {
+        "title": "Fireline",
+        "genres": [
+            "Action",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Marine Force",
+        "genres": [
+            "Action",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "Speed Chasers",
+        "genres": [
+            "Action",
             "Sport"
         ]
     },
     {
-        "title": "Old Town Secrets",
+        "title": "Underworld Heist",
         "genres": [
-            "Mystery",
-            "Noir"
+            "Action",
+            "Crime"
         ]
     },
     {
-        "title": "Winter’s Love",
+        "title": "Street Kings",
         "genres": [
-            "Romance",
-            "Family"
+            "Action",
+            "Crime"
         ]
     },
     {
-        "title": "Knights Tale",
+        "title": "Rogue Agent",
         "genres": [
-            "Adventure",
+            "Action",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Quantum Race",
+        "genres": [
+            "Action",
+            "Sci-Fi"
+        ]
+    },
+    {
+        "title": "Ghost Warriors",
+        "genres": [
+            "Action",
             "Fantasy"
         ]
     },
     {
-        "title": "Crime City",
+        "title": "The Last Combat",
         "genres": [
-            "Crime",
-            "Drama"
+            "Action",
+            "War"
         ]
     },
     {
-        "title": "Wild West Law",
+        "title": "Blade of Vengeance",
         "genres": [
-            "Western",
-            "Action"
+            "Action",
+            "Fantasy"
         ]
     },
     {
-        "title": "The Grand Stage",
+        "title": "City Siege",
         "genres": [
-            "Musical",
-            "Family"
+            "Action",
+            "Thriller"
         ]
     },
     {
-        "title": "Underwater Worlds",
+        "title": "Arctic Pursuit",
         "genres": [
-            "Documentary",
-            "Family"
+            "Action",
+            "Adventure"
         ]
     },
     {
-        "title": "Escape Plan",
+        "title": "Thunder Race",
         "genres": [
-            "Thriller",
-            "Action"
+            "Action",
+            "Sport"
         ]
     },
     {
-        "title": "Eclipse",
+        "title": "Wasteland Warrior",
         "genres": [
-            "Thriller",
+            "Action",
             "Sci-Fi"
         ]
     },
     {
-        "title": "Mystery Ship",
+        "title": "Samurai Dawn",
         "genres": [
-            "Thriller",
+            "Action",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Rebellion Rising",
+        "genres": [
+            "Action",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Operation Deep Sea",
+        "genres": [
+            "Action",
             "Adventure"
         ]
     },
     {
-        "title": "The Hidden Truth",
+        "title": "Lethal Exchange",
         "genres": [
-            "Thriller",
-            "Drama"
-        ]
-    },
-    {
-        "title": "Cipher Code",
-        "genres": [
-            "Thriller",
-            "Mystery"
-        ]
-    },
-    {
-        "title": "Dark Water",
-        "genres": [
-            "Thriller",
-            "Horror"
-        ]
-    },
-    {
-        "title": "Lost Connection",
-        "genres": [
-            "Thriller",
-            "Drama"
-        ]
-    },
-    {
-        "title": "Chase Down",
-        "genres": [
-            "Thriller",
-            "Action"
-        ]
-    },
-    {
-        "title": "Deception Night",
-        "genres": [
-            "Thriller",
-            "Noir"
-        ]
-    },
-    {
-        "title": "Vortex",
-        "genres": [
-            "Sci-Fi",
+            "Action",
             "Thriller"
         ]
     },
     {
-        "title": "Fear the Night",
+        "title": "Wild West Justice",
         "genres": [
-            "Horror",
-            "Thriller"
+            "Action",
+            "Western"
         ]
     },
     {
-        "title": "Double Cross",
+        "title": "Fists of Fury",
         "genres": [
-            "Thriller",
-            "Crime"
-        ]
-    },
-    {
-        "title": "The Unseen Enemy",
-        "genres": [
-            "Thriller",
-            "Horror"
-        ]
-    },
-    {
-        "title": "Space Disappearance",
-        "genres": [
-            "Sci-Fi",
-            "Thriller"
-        ]
-    },
-    {
-        "title": "Lost in Time",
-        "genres": [
-            "Sci-Fi",
-            "Thriller"
-        ]
-    },
-    {
-        "title": "The Unknown Signal",
-        "genres": [
-            "Sci-Fi",
-            "Thriller"
-        ]
-    },
-    {
-        "title": "City of Shadows",
-        "genres": [
-            "Thriller",
-            "Noir"
-        ]
-    },
-    {
-        "title": "Closer than Near",
-        "genres": [
-            "Thriller",
+            "Action",
             "Drama"
         ]
     },
     {
-        "title": "Riddle of the Night",
+        "title": "Steel Brothers",
         "genres": [
-            "Thriller",
-            "Mystery"
+            "Action",
+            "Family"
         ]
     },
     {
-        "title": "Wind Chaser",
+        "title": "Neon Battles",
         "genres": [
-            "Thriller",
-            "Adventure"
-        ]
-    },
-    {
-        "title": "Edge of Doubt",
-        "genres": [
-            "Thriller",
-            "Drama"
-        ]
-    },
-    {
-        "title": "Silent Voices",
-        "genres": [
-            "Thriller",
-            "Drama"
-        ]
-    },
-    {
-        "title": "Under Suspicion",
-        "genres": [
-            "Thriller",
-            "Crime"
-        ]
-    },
-    {
-        "title": "Taken by Storm",
-        "genres": [
-            "Thriller",
-            "Adventure"
-        ]
-    },
-    {
-        "title": "Through the Glass",
-        "genres": [
-            "Thriller",
-            "Mystery"
-        ]
-    },
-    {
-        "title": "On The Brink",
-        "genres": [
-            "Thriller",
-            "Drama"
-        ]
-    },
-    {
-        "title": "Night Walker",
-        "genres": [
-            "Thriller",
-            "Crime"
-        ]
-    },
-    {
-        "title": "Shadow in the Clouds",
-        "genres": [
-            "Thriller",
-            "Horror"
-        ]
-    },
-    {
-        "title": "Terminal Risk",
-        "genres": [
-            "Thriller",
+            "Action",
             "Sci-Fi"
-        ]
-    },
-    {
-        "title": "Echoes of the Past",
-        "genres": [
-            "Thriller",
-            "Mystery"
-        ]
-    },
-    {
-        "title": "Whispering Corridors",
-        "genres": [
-            "Thriller",
-            "Horror"
         ]
     }
 ]

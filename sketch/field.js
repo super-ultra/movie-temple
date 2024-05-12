@@ -50,7 +50,7 @@ class Field {
           const newValue = r * r / ((gridX - x) * (gridX - x) + (gridY - y) * (gridY - y));
           value += newValue;
           
-          if (newValue > 0.2) {
+          if (newValue > 0.1) {
             candidateValues.push(newValue);
             candidateColors.push(color(genre.color));
           }
@@ -63,20 +63,20 @@ class Field {
           const newValue = r * r / ((gridX - x) * (gridX - x) + (gridY - y) * (gridY - y));
           value += newValue;
           
-          if (newValue > 0.2) {
+          if (newValue > 0.1) {
             candidateValues.push(newValue);
             candidateColors.push(color(movie.mainColor));
           }
         }
         
-        if (value >= 0.8) {
+        if (value >= 0.9) {
           noStroke();          
           fill(this._averageColor(candidateColors, candidateValues));
           ellipse(
-            gridX + 10 * sin(noise(0.00005 * gridX * frameCount)), 
-            gridY + 10 * sin(noise(0.00005 * gridY * frameCount)), 
-            Guides.gridSize + 4 * cos(noise(0.00005 * gridX * frameCount)), 
-            Guides.gridSize + 4 * cos(noise(0.00005 * gridY * frameCount))
+            gridX + 4 * sin(noise(0.0001 * gridX * frameCount)), 
+            gridY + 4 * sin(noise(0.0001 * gridY * frameCount)), 
+            Guides.gridSize + 4 * sin(noise(0.0001 * gridX * frameCount)), 
+            Guides.gridSize + 4 * sin(noise(0.0001 * gridX * frameCount))
           );
         }
       }
