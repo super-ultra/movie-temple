@@ -34,7 +34,7 @@ I will send JSON with movie genres. Add to each genre the color that suits it be
         "id": "Fantasy"
     },
     {
-        "id": "Film-Noir"
+        "id": "Noir"
     },
     {
         "id": "History"

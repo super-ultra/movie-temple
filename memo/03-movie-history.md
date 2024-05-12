@@ -7,7 +7,7 @@ List of genres:
 Action
 Adventure
 Animation
-biography
+Biography
 Comedy
 Crime
 Documentary
@@ -21,12 +21,12 @@ Music
 Musical
 Secret
 Romance
-Science fiction
+Sci-Fi
 Short
 Sport
 Thriller
 War
-West
+Western
 
 
 # OUTPUT
@@ -50,7 +50,7 @@ JSON
     },
     {
         "title": "Echoes",
-        "genres": ["biography", "Documentary"]
+        "genres": ["Biography", "Documentary"]
     },
     {
         "title": "The Lost Kingdom",
@@ -82,7 +82,7 @@ JSON
     },
     {
         "title": "Beyond the Stars",
-        "genres": ["Science fiction", "Adventure"]
+        "genres": ["Sci-Fi", "Adventure"]
     },
     {
         "title": "Urban Jungle",
@@ -102,7 +102,7 @@ JSON
     },
     {
         "title": "Footprints in the Sand",
-        "genres": ["biography", "Adventure"]
+        "genres": ["Biography", "Adventure"]
     },
     {
         "title": "Game of Champions",
@@ -110,6 +110,6 @@ JSON
     },
     {
         "title": "Unseen World",
-        "genres": ["Documentary", "Science fiction"]
+        "genres": ["Documentary", "Sci-Fi"]
     }
 ]

@@ -30,7 +30,7 @@
     {
         "title": "Echoes",
         "genres": [
-            "biography",
+            "Biography",
             "Documentary"
         ]
     },
@@ -44,7 +44,7 @@
     {
         "title": "Silhouettes",
         "genres": [
-            "Film noir",
+            "Noir",
             "Crime"
         ]
     },
@@ -79,14 +79,14 @@
     {
         "title": "Frontier Spirits",
         "genres": [
-            "West",
+            "Western",
             "Adventure"
         ]
     },
     {
         "title": "Beyond the Stars",
         "genres": [
-            "Science fiction",
+            "Sci-Fi",
             "Adventure"
         ]
     },
@@ -100,8 +100,7 @@
     {
         "title": "Whispering Pines",
         "genres": [
-            "Family",
-            "Story"
+            "Family"
         ]
     },
     {
@@ -114,14 +113,13 @@
     {
         "title": "Shadows and Secrets",
         "genres": [
-            "Secret",
             "Thriller"
         ]
     },
     {
         "title": "Footprints in the Sand",
         "genres": [
-            "biography",
+            "Biography",
             "Adventure"
         ]
     },
@@ -136,7 +134,182 @@
         "title": "Unseen World",
         "genres": [
             "Documentary",
-            "Science fiction"
+            "Sci-Fi"
+        ]
+    },
+    {
+        "title": "Space Voyage",
+        "genres": [
+            "Sci-Fi",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "Haunted Night",
+        "genres": [
+            "Horror",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "War Heroes",
+        "genres": [
+            "War",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Last Stand",
+        "genres": [
+            "Action",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "The Love Song",
+        "genres": [
+            "Romance",
+            "Musical"
+        ]
+    },
+    {
+        "title": "Comedian Chronicles",
+        "genres": [
+            "Comedy",
+            "Biography"
+        ]
+    },
+    {
+        "title": "Oceans Heart",
+        "genres": [
+            "Documentary",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "Urban Legends",
+        "genres": [
+            "Thriller",
+            "Horror"
+        ]
+    },
+    {
+        "title": "Solve the Puzzle",
+        "genres": [
+            "Mystery",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Fast Lanes",
+        "genres": [
+            "Sport",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Fantasy Realm",
+        "genres": [
+            "Fantasy",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "Robots Revolt",
+        "genres": [
+            "Sci-Fi",
+            "Action"
+        ]
+    },
+    {
+        "title": "Renaissance Man",
+        "genres": [
+            "Biography",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Kingdom Lost",
+        "genres": [
+            "History",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Invisible Fear",
+        "genres": [
+            "Thriller",
+            "Mystery"
+        ]
+    },
+    {
+        "title": "Neon Jazz",
+        "genres": [
+            "Music",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Alien Encounter",
+        "genres": [
+            "Sci-Fi",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Mountain High",
+        "genres": [
+            "Documentary",
+            "Sport"
+        ]
+    },
+    {
+        "title": "Old Town Secrets",
+        "genres": [
+            "Mystery",
+            "Noir"
+        ]
+    },
+    {
+        "title": "Winter’s Love",
+        "genres": [
+            "Romance",
+            "Family"
+        ]
+    },
+    {
+        "title": "Knights Tale",
+        "genres": [
+            "Adventure",
+            "Fantasy"
+        ]
+    },
+    {
+        "title": "Crime City",
+        "genres": [
+            "Crime",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Wild West Law",
+        "genres": [
+            "Western",
+            "Action"
+        ]
+    },
+    {
+        "title": "The Grand Stage",
+        "genres": [
+            "Musical",
+            "Family"
+        ]
+    },
+    {
+        "title": "Underwater Worlds",
+        "genres": [
+            "Documentary",
+            "Family"
         ]
     }
 ]

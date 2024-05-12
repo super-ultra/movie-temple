@@ -13,7 +13,7 @@ Documentary
 Drama
 Family
 Fantasy
-Film-Noir
+Noir
 History
 Horror
 Music
