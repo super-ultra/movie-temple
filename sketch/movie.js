@@ -24,7 +24,7 @@ class Movie {
 
     // Check distance to genre
     const distance = p5.Vector.dist(this.position, genre.position);
-    if (distance < 25) {
+    if (distance < Guides.movieSize) {
       this.targetGenreIndex = floor(random(this.genres.length));
     }
 
@@ -47,7 +47,7 @@ class Movie {
     for (const other of state.movies) {
       if (other !== this) {
         const distance = p5.Vector.dist(this.position, other.position);
-        if (distance < 30) {
+        if (distance < Guides.movieSize + 5) {
           const away = p5.Vector.sub(this.position, other.position);
           away.normalize();
           away.mult(2.5);
@@ -64,15 +64,39 @@ class Movie {
     //   circle(this.trail[i].x, this.trail[i].y, 3);
     // }
 
-    const genre = this._getTargetGenre();
-    let drawColor = color(genre.color);
-    drawColor.setAlpha(128);
+    let size = Guides.movieSize;
+    
+    for (const genreId of this.genres) {
+      const rawColor = state.genres.get(genreId).color;
+      const drawColor = color(rawColor);
+      drawColor.setAlpha(64);
+      
+      fill(drawColor);
+      circle(this.position.x, this.position.y, size);
+      
+      size = size / 1.5;
+    }
 
-    stroke(0, 5);
-    fill(drawColor);
-    circle(this.position.x, this.position.y, Guides.movieSize);
-    circle(this.position.x, this.position.y, Guides.movieSize / 2.5);
-    circle(this.position.x, this.position.y, Guides.movieSize / 5);
+    for (let other of state.movies) {
+      if (other === this) {
+        continue;
+      }
+      const distance = p5.Vector.dist(this.position, other.position);
+      if (distance < 95) {
+        strokeWeight(0.5);
+        stroke(200, 200, 200, 50);
+        
+        line(this.position.x, this.position.y, other.position.x, other.position.y);
+      }
+    }
+    
+    //const genre = this._getTargetGenre();
+    //let drawColor = color(genre.color);
+    //drawColor.setAlpha(128);
+    //fill(drawColor);
+    //circle(this.position.x, this.position.y, Guides.movieSize);
+    //circle(this.position.x, this.position.y, Guides.movieSize / 2.5);
+    //circle(this.position.x, this.position.y, Guides.movieSize / 5);
   }
 
   

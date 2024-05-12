@@ -1,13 +1,4 @@
-
-let rawGenres;
-let rawMovies;
-
-let movies;
-let genres;
-
 let state;
-
-//const trailLength = 150;
 
 function preload() {
   state = new State();
@@ -20,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(255, 50);
+  background(255, 150);
 
   for (const [id, genre] of state.genres.entries()) {
     genre.display();

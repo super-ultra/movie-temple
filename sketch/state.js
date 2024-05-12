@@ -1,5 +1,4 @@
 class State {
-
   constructor() {
     this.movies = [];
     this.genres = new Map();
