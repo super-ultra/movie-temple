@@ -33,9 +33,9 @@ class Field {
 
   // Circles
   
-  drawCircles() {   
+  drawCircles() {
     for (let i = 0; i < this.cols; i++) {
-      for (let j = 0; j < this.rows; j++) {
+      for (let j = 0; j < this.rows; j++) {        
         const gridX = i * Guides.gridSize;
         const gridY = j * Guides.gridSize;
         
@@ -69,14 +69,17 @@ class Field {
           }
         }
         
-        if (value >= 0.9) {
+        if (value >= 1) {
           noStroke();          
           fill(this._averageColor(candidateColors, candidateValues));
-          ellipse(
-            gridX + 4 * sin(noise(0.0001 * gridX * frameCount)), 
-            gridY + 4 * sin(noise(0.0001 * gridY * frameCount)), 
-            Guides.gridSize + 4 * sin(noise(0.0001 * gridX * frameCount)), 
-            Guides.gridSize + 4 * sin(noise(0.0001 * gridX * frameCount))
+          
+          const r = Guides.gridSize + Guides.gridSize * cos(2 * noise(0.00001 * gridX * frameCount, 0.00001 * gridY * frameCount))
+          
+          circle(
+            gridX + Guides.gridSize * sin(noise(0.00001 * gridX * frameCount)), 
+            gridY + Guides.gridSize * sin(noise(0.00001 * gridY * frameCount)), 
+            r, 
+            r
           );
         }
       }

@@ -7,10 +7,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth - 4, window.innerHeight - 4);
   state.setup();
   
-  field = new Field(window.innerWidth, window.innerHeight);
+  field = new Field(window.innerWidth - 4, window.innerHeight - 4);
 }
 
 function draw() {

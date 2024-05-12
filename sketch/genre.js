@@ -7,7 +7,7 @@ class Genre {
   }
 
   get radius() {
-    return max(Guides.movieRadius, this.movieCount * 4);
+    return max(Guides.movieRadius, this.movieCount * Guides.genreRadius);
   }
   
   draw() {
@@ -23,9 +23,9 @@ class Genre {
     fill(drawColor);
     circle(this.position.x, this.position.y, diameter);
     fill(drawColor);
-    circle(this.position.x, this.position.y, diameter / 2);
+    circle(this.position.x, this.position.y, diameter / 1.5);
     fill(drawColor);
-    circle(this.position.x, this.position.y, diameter / 4);
+    circle(this.position.x, this.position.y, diameter / 1.5 / 1.5);
     
     fill(40);
     textStyle(BOLD);
