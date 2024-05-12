@@ -5,23 +5,24 @@ class Genre {
     this.movieCount = movieCount
     this.position = createVector(x, y);
   }
+
+  size() {
+    return max(Guides.movieSize, this.movieCount * 8);
+  }
   
   display() {
     noStroke();
     
     stroke(0, 5);
 
-
     let drawColor = color(this.color);
     drawColor.setAlpha(128);
-    
-    const size = max(Guides.movieSize, this.movieCount * 8);
-    
+        
     fill(drawColor);
-    circle(this.position.x, this.position.y, size);
+    circle(this.position.x, this.position.y, this.size());
     fill(drawColor);
-    circle(this.position.x, this.position.y, size / 2);
+    circle(this.position.x, this.position.y, this.size() / 2);
     fill(drawColor);
-    circle(this.position.x, this.position.y, size / 4);
+    circle(this.position.x, this.position.y, this.size() / 4);
   }
 }

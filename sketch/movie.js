@@ -24,7 +24,7 @@ class Movie {
 
     // Check distance to genre
     const distance = p5.Vector.dist(this.position, genre.position);
-    if (distance < Guides.movieSize) {
+    if (distance < (Guides.movieSize + genre.size()) / 2.5) {
       this.targetGenreIndex = floor(random(this.genres.length));
     }
 
