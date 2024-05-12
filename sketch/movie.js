@@ -44,7 +44,7 @@ class Movie {
     // }
 
     // Avoid other movies
-    for (const other of movies) {
+    for (const other of state.movies) {
       if (other !== this) {
         const distance = p5.Vector.dist(this.position, other.position);
         if (distance < 30) {
@@ -80,7 +80,7 @@ class Movie {
 
   _getTargetGenre() {
     const genreId = this.genres[this.targetGenreIndex];
-    return genres.get(genreId);
+    return state.genres.get(genreId);
   }
 
 }
