@@ -10,12 +10,14 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   state.setup();
   
-  field = new Field();
+  field = new Field(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
   background(255, 150);
 
+  
+  field.draw();
   for (const [id, genre] of state.genres.entries()) {
     genre.draw();
   }
@@ -24,8 +26,6 @@ function draw() {
     movie.move();
     movie.draw();
   }
-  
-  field.draw();
 }
 
 function windowResized() {

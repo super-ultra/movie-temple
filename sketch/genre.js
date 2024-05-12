@@ -6,8 +6,8 @@ class Genre {
     this.position = createVector(x, y);
   }
 
-  size() {
-    return max(Guides.movieSize, this.movieCount * 8);
+  get radius() {
+    return max(Guides.movieRadius, this.movieCount * 4);
   }
   
   draw() {
@@ -16,13 +16,15 @@ class Genre {
     stroke(0, 5);
 
     let drawColor = color(this.color);
-    drawColor.setAlpha(128);
+    drawColor.setAlpha(Guides.objectAlpha);
         
+    const diameter = 2 * this.radius;
+
     fill(drawColor);
-    circle(this.position.x, this.position.y, this.size());
+    circle(this.position.x, this.position.y, diameter);
     fill(drawColor);
-    circle(this.position.x, this.position.y, this.size() / 2);
+    circle(this.position.x, this.position.y, diameter / 2);
     fill(drawColor);
-    circle(this.position.x, this.position.y, this.size() / 4);
+    circle(this.position.x, this.position.y, diameter / 4);
   }
 }
