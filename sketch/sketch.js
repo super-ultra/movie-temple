@@ -34,13 +34,14 @@ function setup() {
     movies.push(movie)
 
     for (const genreId of rawMovie["genres"]) {
+      console.log(genreId)
       genres.get(genreId).movieCount += 1;
     }
   }
 }
 
 function draw() {
-  background(0, 50);
+  background(255, 50);
 
   for (const [id, genre] of genres.entries()) {
     genre.display();

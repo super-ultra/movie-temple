@@ -311,5 +311,222 @@
             "Documentary",
             "Family"
         ]
+    },
+    {
+        "title": "Escape Plan",
+        "genres": [
+            "Thriller",
+            "Action"
+        ]
+    },
+    {
+        "title": "Eclipse",
+        "genres": [
+            "Thriller",
+            "Sci-Fi"
+        ]
+    },
+    {
+        "title": "Mystery Ship",
+        "genres": [
+            "Thriller",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "The Hidden Truth",
+        "genres": [
+            "Thriller",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Cipher Code",
+        "genres": [
+            "Thriller",
+            "Mystery"
+        ]
+    },
+    {
+        "title": "Dark Water",
+        "genres": [
+            "Thriller",
+            "Horror"
+        ]
+    },
+    {
+        "title": "Lost Connection",
+        "genres": [
+            "Thriller",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Chase Down",
+        "genres": [
+            "Thriller",
+            "Action"
+        ]
+    },
+    {
+        "title": "Deception Night",
+        "genres": [
+            "Thriller",
+            "Noir"
+        ]
+    },
+    {
+        "title": "Vortex",
+        "genres": [
+            "Sci-Fi",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Fear the Night",
+        "genres": [
+            "Horror",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Double Cross",
+        "genres": [
+            "Thriller",
+            "Crime"
+        ]
+    },
+    {
+        "title": "The Unseen Enemy",
+        "genres": [
+            "Thriller",
+            "Horror"
+        ]
+    },
+    {
+        "title": "Space Disappearance",
+        "genres": [
+            "Sci-Fi",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "Lost in Time",
+        "genres": [
+            "Sci-Fi",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "The Unknown Signal",
+        "genres": [
+            "Sci-Fi",
+            "Thriller"
+        ]
+    },
+    {
+        "title": "City of Shadows",
+        "genres": [
+            "Thriller",
+            "Noir"
+        ]
+    },
+    {
+        "title": "Closer than Near",
+        "genres": [
+            "Thriller",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Riddle of the Night",
+        "genres": [
+            "Thriller",
+            "Mystery"
+        ]
+    },
+    {
+        "title": "Wind Chaser",
+        "genres": [
+            "Thriller",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "Edge of Doubt",
+        "genres": [
+            "Thriller",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Silent Voices",
+        "genres": [
+            "Thriller",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Under Suspicion",
+        "genres": [
+            "Thriller",
+            "Crime"
+        ]
+    },
+    {
+        "title": "Taken by Storm",
+        "genres": [
+            "Thriller",
+            "Adventure"
+        ]
+    },
+    {
+        "title": "Through the Glass",
+        "genres": [
+            "Thriller",
+            "Mystery"
+        ]
+    },
+    {
+        "title": "On The Brink",
+        "genres": [
+            "Thriller",
+            "Drama"
+        ]
+    },
+    {
+        "title": "Night Walker",
+        "genres": [
+            "Thriller",
+            "Crime"
+        ]
+    },
+    {
+        "title": "Shadow in the Clouds",
+        "genres": [
+            "Thriller",
+            "Horror"
+        ]
+    },
+    {
+        "title": "Terminal Risk",
+        "genres": [
+            "Thriller",
+            "Sci-Fi"
+        ]
+    },
+    {
+        "title": "Echoes of the Past",
+        "genres": [
+            "Thriller",
+            "Mystery"
+        ]
+    },
+    {
+        "title": "Whispering Corridors",
+        "genres": [
+            "Thriller",
+            "Horror"
+        ]
     }
 ]

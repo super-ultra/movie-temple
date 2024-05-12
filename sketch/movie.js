@@ -70,9 +70,9 @@ class Movie {
 
     stroke(0, 5);
     fill(drawColor);
-    circle(this.position.x, this.position.y, 25);
-    circle(this.position.x, this.position.y, 15);
-    circle(this.position.x, this.position.y, 5);
+    circle(this.position.x, this.position.y, Guides.movieSize);
+    circle(this.position.x, this.position.y, Guides.movieSize / 2.5);
+    circle(this.position.x, this.position.y, Guides.movieSize / 5);
   }
 
   
