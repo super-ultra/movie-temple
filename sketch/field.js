@@ -74,7 +74,7 @@ class Field {
         
         if (value >= Guides.fieldSize) {
           noStroke();          
-          //fill(this._averageColor(candidateColors, candidateValues));
+          fill(this._averageColor(candidateColors, candidateValues));
           
           const r = Guides.gridSize + Guides.gridSize * cos(2 * noise(0.00001 * gridX * frameCount, 0.00001 * gridY * frameCount))
           
