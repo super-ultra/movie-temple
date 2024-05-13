@@ -34,6 +34,9 @@ class Field {
   // Circles
   
   drawCircles() {
+    this.cols = this.canvasWidth / Guides.gridSize + 1;
+    this.rows = this.canvasHeight / Guides.gridSize + 1;
+    
     for (let i = 0; i < this.cols; i++) {
       for (let j = 0; j < this.rows; j++) {        
         const gridX = i * Guides.gridSize;
@@ -69,9 +72,9 @@ class Field {
           }
         }
         
-        if (value >= 1) {
+        if (value >= Guides.fieldSize) {
           noStroke();          
-          fill(this._averageColor(candidateColors, candidateValues));
+          //fill(this._averageColor(candidateColors, candidateValues));
           
           const r = Guides.gridSize + Guides.gridSize * cos(2 * noise(0.00001 * gridX * frameCount, 0.00001 * gridY * frameCount))
           

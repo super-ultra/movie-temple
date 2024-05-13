@@ -1,9 +1,12 @@
 let state;
 let field; 
+let controlPanel;
 
 function preload() {
   state = new State();
   state.preload();
+  
+  controlPanel = new ControlPanel();
 }
 
 function setup() {
@@ -16,8 +19,8 @@ function setup() {
 function draw() {
   background(255, 40);
   
- 
   field.draw();
+  
   for (const [id, genre] of state.genres.entries()) {
     genre.draw();
   }
@@ -26,6 +29,8 @@ function draw() {
     movie.move();
     movie.draw();
   }
+  
+  controlPanel.draw()
 }
 
 function windowResized() {

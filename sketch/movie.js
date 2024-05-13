@@ -28,6 +28,9 @@ class Movie {
     if (distance < Guides.movieRadius + genre.radius) {
       this.targetGenreIndex = floor(random(this.genres.length));
     }
+    
+    // Add noise
+    // this.position.add(2 * sin(noise(this.position.x * frameCount)), 2 * sin(noise(this.position.y * frameCount)));
 
     // Avoid other movies
     for (const other of state.movies) {
