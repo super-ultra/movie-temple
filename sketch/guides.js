@@ -4,5 +4,6 @@ let Guides = {
     movementSpeed: 4,
     gridSize: 16,
     objectAlpha: 128,
-    fieldSize: 1
+    fieldSize: 1,
+    noiseFactor: 1
 }

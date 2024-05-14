@@ -76,11 +76,12 @@ class Field {
           noStroke();          
           fill(this._averageColor(candidateColors, candidateValues));
           
-          const r = Guides.gridSize + Guides.gridSize * cos(2 * noise(0.00001 * gridX * frameCount, 0.00001 * gridY * frameCount))
+          const factor = 0.00001 * Guides.noiseFactor
+          const r = Guides.gridSize + Guides.gridSize * sin(noise(factor * gridX * frameCount, factor * gridY * frameCount))
           
           circle(
-            gridX + Guides.gridSize * sin(noise(0.00001 * gridX * frameCount)), 
-            gridY + Guides.gridSize * sin(noise(0.00001 * gridY * frameCount)), 
+            gridX + Guides.gridSize * sin(noise(factor * gridX * frameCount)), 
+            gridY + Guides.gridSize * sin(noise(factor * gridY * frameCount)), 
             r, 
             r
           );
